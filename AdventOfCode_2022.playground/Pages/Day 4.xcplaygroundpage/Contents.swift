@@ -8,7 +8,7 @@ enum BoundCriteria {
 }
 
 func findRedundantWorkCount(criteria: BoundCriteria) -> Int {
-    let input = PlaygroundHelper.shared.convertTextFileToString(name: "1-4")!
+    let input = PlaygroundHelper.shared.convertTextFileToString(name: "4")!
     let itemsArray = input.components(separatedBy: "\n")
     let rangesArray = itemsArray.map { $0.components(separatedBy: ",") }
     let redundantWorkCount = rangesArray.map { range in

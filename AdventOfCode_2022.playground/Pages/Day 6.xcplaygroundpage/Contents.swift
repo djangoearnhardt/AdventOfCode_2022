@@ -1,7 +1,7 @@
 import Foundation
 
 func findMarker(offset: Int) -> Int {
-    let input = PlaygroundHelper.shared.convertTextFileToString(name: "1-6")!
+    let input = PlaygroundHelper.shared.convertTextFileToString(name: "6")!
     let startIndex = input.index(input.startIndex, offsetBy: 0)
     let endIndex = input.index(input.startIndex, offsetBy: offset)
     for index in 0...(input.count - offset) {

@@ -64,7 +64,7 @@ func numberOfMovesFromArrayToArray(string: String) -> (Int?, (Int?, Int?)) {
 }
 
 func makeCratesAndDirections() -> ([String], [String]) {
-    let input = PlaygroundHelper.shared.convertTextFileToString(name: "1-5")!
+    let input = PlaygroundHelper.shared.convertTextFileToString(name: "5")!
     var itemsArray = input.components(separatedBy: "\n")
     let crateArray = Array(itemsArray[0...7])
     itemsArray.removeSubrange(0...9)

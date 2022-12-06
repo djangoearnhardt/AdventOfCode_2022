@@ -53,7 +53,7 @@ enum RoundResult: Int {
 }
 
 func pRSRoundOne() -> Int {
-    guard let input = PlaygroundHelper.shared.convertTextFileToString(name: "1-2") else { return 0 }
+    guard let input = PlaygroundHelper.shared.convertTextFileToString(name: "2") else { return 0 }
     let cipherArray = input.components(separatedBy: "\n")
     let total = cipherArray.map { cipher  in
         let opponentCipher = String(cipher.prefix(1))

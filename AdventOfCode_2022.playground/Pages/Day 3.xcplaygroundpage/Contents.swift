@@ -3,7 +3,7 @@
 import Foundation
 
 func sumOfDuplicatePriorityItems() -> Int {
-    guard let input = PlaygroundHelper.shared.convertTextFileToString(name: "1-3") else { return 0 }
+    guard let input = PlaygroundHelper.shared.convertTextFileToString(name: "3") else { return 0 }
     let priorityValueDict = makePriorityValueDict()
     let itemsArray = input.components(separatedBy: "\n")
     let prioritySum = itemsArray.map { items in
